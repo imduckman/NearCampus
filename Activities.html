@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <title>목적 기반 장소 추천</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/recomend_place.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/Map.css">
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Food.html">Food</a></li>
+              <li><a href="Cafe.html">Cafe</a></li>
+              <li><a href="Activities.html" class="active">Activities</a></li>
+              <li><a href="Drink.html">Drink</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Food recomend ***** -->
+          <div class="live-stream">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Recommend about</em> Activities</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="광교호수공원">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/광교호수공원1.png" alt="">
+                      <img src="assets/images/activity/광교호수공원2.png" alt="">
+                      <img src="assets/images/activity/광교호수공원3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.8</a></li>
+                          <li><a href="#">산책하기 좋은 호수공원</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>광교호수공원</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="크라우드pc 경기대점">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/크라우드pc1.png" alt="">
+                      <img src="assets/images/activity/크라우드pc2.png" alt="">
+                      <img src="assets/images/activity/크라우드pc3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 3.6</a></li>
+                          <li><a href="#">경기대 주변 고사양 PC방</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>크라우드pc 경기대점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="광교공원">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/광교공원1.png" alt="">
+                      <img src="assets/images/activity/광교공원2.png" alt="">
+                      <img src="assets/images/activity/광교공원3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">정문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.4</a></li>
+                          <li><a href="#">광교저수지 앞에 위치한 나들이하기 좋은 장소</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>광교공원</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="시그널헌터 광교중앙점">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/시그널헌터1.png" alt="">
+                      <img src="assets/images/activity/시그널헌터2.png" alt="">
+                      <img src="assets/images/activity/시그널헌터3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.2</a></li>
+                          <li><a href="#">친구, 연인과 이색데이트 광교 방탈출카페</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>시그널헌터 광교중앙점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="광교산산림욕장장">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/광교산산림욕장1.png" alt="">
+                      <img src="assets/images/activity/광교산산림욕장2.png" alt="">
+                      <img src="assets/images/activity/광교산산림욕장3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">정문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 3.9</a></li>
+                          <li><a href="#">등산과 휴향을 함께 즐길 수 있는 건강공원</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>광교산산림욕장</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="판타스틱코인노래연습장 경기대점">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/판타스틱코인노래연습장1.png" alt="">
+                      <img src="assets/images/activity/판타스틱코인노래연습장2.png" alt="">
+                      <img src="assets/images/activity/판타스틱코인노래연습장3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.1</a></li>
+                          <li><a href="#">경기대 후문에 위치한 큰 규모의 코인노래방</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>판타스틱코인노래연습장 경기대점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="옵티머스당구클럽">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/옵티머스당구클럽1.png" alt="">
+                      <img src="assets/images/activity/옵티머스당구클럽2.png" alt="">
+                      <img src="assets/images/activity/옵티머스당구클럽3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 3.3</a></li>
+                          <li><a href="#">시간 날 때 가기 좋은 넓은 당구장</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>옵티머스당구클럽</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="광교 진 락볼링장">
+                    <div class="slideshow">
+                      <img src="assets/images/activity/광교진락볼릭장1.png" alt="">
+                      <img src="assets/images/activity/광교진락볼링장2.png" alt="">
+                      <img src="assets/images/activity/광교진락볼링장3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 3.9</a></li>
+                          <li><a href="#">학교 근처 유일한 볼링 치기 좋은 곳</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>광교 진 락볼링장</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 ">
+                <div class="main-button">
+                  <a>Load More Places</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Food recomend ***** -->
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="mapModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalLabel">장소 정보</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="map" style="width:100%;height:400px;"></div>
+          <div id="placeInfo" style="margin-top: 15px;">
+            <h6>장소 이름: <span id="placeName"></span></h6>
+            <p>주소: <span id="placeAddress"></span></p>
+            <p>전화번호: <span id="placePhone"></span></p>
+            <p><a id="placeUrl" href="#" target="_blank">자세히 보기</a></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>© 2025 <a href="#">NearCampus</a>
+            <br>Designe by : 경기대학교 AI 컴퓨터 공학부 이강민, 원휘연, 이대성<br>Contact :
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXMnqBrFtBbsLxXxpxbVCMQtgQztqLKcCPnKsCcpSlNjzvFQRLfrRCtgccLCNPPKBVFld"
+              target="_blank" title="free CSS templates">jvmmf310@kyonggi.ac.kr</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script
+    src="https://dapi.Kakao.com/v2/maps/sdk.js?appkey=39746389705ed72d9fe980e3f5d962cb&libraries=services"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

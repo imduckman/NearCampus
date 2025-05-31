@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <title>목적 기반 장소 추천</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/recomend_place.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/Map.css">
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Food.html">Food</a></li>
+              <li><a href="Cafe.html">Cafe</a></li>
+              <li><a href="Activities.html">Activities</a></li>
+              <li><a href="Drink.html" class="active">Drink</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Food recomend ***** -->
+          <div class="live-stream">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Recommend about</em> Drink</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="카타르시스 경기대">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/카타르시스1.png" alt="">
+                      <img src="assets/images/drink/카타르시스2.png" alt="">
+                      <img src="assets/images/drink/카타르시스3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i>4.8</a></li>
+                          <li><a href="#">기대생이라면 모를 수가 없는 인기만점 맛집.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>카타르시스</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="더부엌1.5">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/더부엌1.png" alt="">
+                      <img src="assets/images/drink/더부엌2.png" alt="">
+                      <img src="assets/images/drink/더부엌3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i>4.7</a></li>
+                          <li><a href="#">기대 후문 술집 중에 조용하고 공간도 아늑해서 대화하기 좋음.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>더부엌1.5</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="사쿠라 경기대점">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/사쿠라1.png" alt="">
+                      <img src="assets/images/drink/사쿠라2.png" alt="">
+                      <img src="assets/images/drink/사쿠라3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.6</a></li>
+                          <li><a href="#">다양한 안주하고 맛있는 안주가 있는 술집</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>사쿠라 경기대점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="술도둑">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/술도둑1.png" alt="">
+                      <img src="assets/images/drink/술도둑2.png" alt="">
+                      <img src="assets/images/drink/술도둑3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.3</a></li>
+                          <li><a href="#">막걸리, 전 맛집</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>술도둑</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="글로와바 경기대본점">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/글로와바1.png" alt="">
+                      <img src="assets/images/drink/글로와바2.png" alt="">
+                      <img src="assets/images/drink/글로와바3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i>3.7</a></li>
+                          <li><a href="#">단체 모임시 가기 좋은 술집.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>글로와바 경기대본점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="고도리비스트로 본점">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/고도리비스트로1.png" alt="">
+                      <img src="assets/images/drink/고도리비스트로2.png" alt="">
+                      <img src="assets/images/drink/고도리비스트로3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 3.3</a></li>
+                          <li><a href="#">퓨전 요리주점.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>고도리비스트로 본점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="경기대닭발">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/경기대닭발1.png" alt="">
+                      <img src="assets/images/drink/경기대닭발2.png" alt="">
+                      <img src="assets/images/drink/경기대닭발3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 4.1</a></li>
+                          <li><a href="#">무뼈 직화 닭발이 정말 맛있음.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>경기대닭발</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb" data-place-name="조선부뚜막 광교역점">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/조선부뚜막1.png" alt="">
+                      <img src="assets/images/drink/조선부뚜막2.png" alt="">
+                      <img src="assets/images/drink/조선부뚜막3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">후문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i> 3.6</a></li>
+                          <li><a href="#">삼쏘 맛집.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>조선부뚜막 광교역점</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 hidden-section">
+                <div class="item">
+                  <div class="thumb" data-place-name="보거스치킨">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/보거스1.png" alt="">
+                      <img src="assets/images/drink/보거스2.png" alt="">
+                      <img src="assets/images/drink/보거스3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">정문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i>3.2</a></li>
+                          <li><a href="#">새벽 늦게까지 하는 술집.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>보거스치킨</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 hidden-section">
+                <div class="item">
+                  <div class="thumb" data-place-name="우마이육회">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/우마이.png" alt="">
+                      <img src="assets/images/drink/우마이2.png" alt="">
+                      <img src="assets/images/drink/우마이3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">정문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i>4.9</a></li>
+                          <li><a href="#">카타르시스와 같은 레시피의 수육튀김.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>우마이육회</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 hidden-section">
+                <div class="item">
+                  <div class="thumb" data-place-name="연무동연어집 ">
+                    <div class="slideshow">
+                      <img src="assets/images/drink/연어집.png" alt="">
+                      <img src="assets/images/drink/연어집2.png" alt="">
+                      <img src="assets/images/drink/연어집3.png" alt="">
+                    </div>
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#">정문</a>
+                        </div>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-star"></i>4.7</a></li>
+                          <li><a href="#">분위기 좋은 일식집.</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>연무동연어집 </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 ">
+                <div class="main-button">
+                  <a>Load More Places</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Food recomend ***** -->
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="mapModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalLabel">장소 정보</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="map" style="width:100%;height:400px;"></div>
+          <div id="placeInfo" style="margin-top: 15px;">
+            <h6>장소 이름: <span id="placeName"></span></h6>
+            <p>주소: <span id="placeAddress"></span></p>
+            <p>전화번호: <span id="placePhone"></span></p>
+            <p><a id="placeUrl" href="#" target="_blank">자세히 보기</a></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>© 2025 <a href="#">NearCampus</a>
+            <br>Designe by : 경기대학교 AI 컴퓨터 공학부 이강민, 원휘연, 이대성<br>Contact :
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXMnqBrFtBbsLxXxpxbVCMQtgQztqLKcCPnKsCcpSlNjzvFQRLfrRCtgccLCNPPKBVFld"
+              target="_blank" title="free CSS templates">jvmmf310@kyonggi.ac.kr</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script
+    src="https://dapi.Kakao.com/v2/maps/sdk.js?appkey=39746389705ed72d9fe980e3f5d962cb&libraries=services"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

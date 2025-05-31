@@ -1,0 +1,123 @@
+.modal-content {
+    border-radius: 10px; /* 모달 모서리 둥글게 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+    background-color: #282b3d; /* Cyborg 템플릿의 배경색과 유사하게 */
+    color: #ffffff; /* 텍스트 색상 흰색 */
+    border: 1px solid #4a4d65; /* 테두리 색상 */
+}
+.modal-header {
+    border-bottom: 1px solid #4a4d65; /* 헤더와 바디 경계선 */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .modal-title {
+    color: #ffffff; /* 제목 색상 */
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* 닫기 버튼 스타일 */
+.modal-header .close {
+    color: #ffffff; /* 닫기 버튼 X 색상 */
+    opacity: 1;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: -1rem -1rem -1rem auto; /* Bootstrap 기본 여백 조정 */
+    background-color: transparent;
+    border: none;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+    color: #e75e8d; /* 호버 시 색상 변경 */
+    opacity: 0.75;
+    outline: none;
+    text-decoration: none;
+}
+.modal-body {
+    padding: 20px;
+}
+#map {
+    width: 100%;
+    height: 400px; /* 지도의 높이 */
+    border-radius: 8px; /* 지도 모서리 둥글게 */
+    border: 1px solid #4a4d65; /* 지도 테두리 */
+    margin-bottom: 20px; /* 지도와 정보 사이 간격 */
+}
+#placeInfo {
+    background-color: #1f212b; /* 정보 배경색 */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #4a4d65;
+}
+
+#placeInfo h6 {
+    color: #e75e8d; /* 소제목 색상 */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#placeInfo p {
+    color: #c4c4c4; /* 본문 텍스트 색상 */
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+#placeInfo a {
+    color: #a0a0a0; /* 링크 색상 */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#placeInfo a:hover {
+    color: #e75e8d; /* 링크 호버 색상 */
+    text-decoration: underline;
+}
+.modal-footer {
+    border-top: 1px solid #4a4d65; /* 푸터와 바디 경계선 */
+    padding: 15px 20px;
+    justify-content: flex-end; /* 버튼을 오른쪽으로 정렬 */
+}
+
+/* 닫기 버튼 스타일 (모달 푸터 내) */
+.modal-footer .btn-secondary {
+    background-color: #6a6e87; /* 버튼 배경색 */
+    border-color: #6a6e87; /* 버튼 테두리색 */
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #e75e8d; /* 호버 시 색상 변경 */
+    border-color: #e75e8d;
+    color: #ffffff;
+}
+
+/* 작은 화면에서의 모달 크기 조정 */
+@media (max-width: 768px) {
+    .modal-dialog.modal-lg {
+        max-width: 95%; /* 작은 화면에서 모달 너비 조정 */
+        margin: 1.75rem auto;
+    }
+    #map {
+        height: 300px; /* 작은 화면에서 지도 높이 조정 */
+    }
+}
+    .modal-body {
+        padding: 15px;
+    }
+    #placeInfo {
+        padding: 10px;
+    }
+    #placeInfo h6 {
+        font-size: 1rem;
+    }
+    #placeInfo p {
+        font-size: 0.9rem;
+    }
