@@ -51,6 +51,67 @@ NearCampus/
 │ └── jquery/
 ├── README.md
 
+## Getting Started / Execution Guide
+
+### 1. Local Execution
+
+You can run this project locally on your computer without any special server or additional installation.
+
+**Steps:**
+1. Download or clone this repository:
+   
+git clone https://github.com/imduckman/NearCampus.git
+
+or download as a ZIP and extract it.
+
+2. Open the project folder.
+
+3. Double-click the `index.html` file (or right-click and choose "Open with" → your web browser).
+
+4. The website should open directly in your browser.  
+(Make sure your internet connection is on, for Kakao Map and Google Fonts.)
+
+**Requirements:**  
+- A modern web browser (Chrome, Edge, Firefox, Safari, etc.)  
+- Internet connection (for external resources like Kakao Map API and Google Fonts)
+
+---
+
+### 2. Online Deployment via GitHub Pages
+
+If you want to view the site live via GitHub Pages:
+
+1. Make sure `index.html` is in the root of your repository.
+
+2. Go to your repository on GitHub > **Settings** > **Pages**.
+
+3. In the **Source** section, select the `main` branch and `/ (root)` folder.
+
+4. Click **Save**.  
+GitHub will publish your website at  
+`https://[your-username].github.io/[your-repo]/`
+
+**Example:**  
+
+https://imduckman.github.io/NearCampus/
+
+
+- All project features (navigation, maps, reviews, image slides) should work online just like locally.
+- It may take a few minutes after each push for the page to update.
+
+---
+
+### 3. Troubleshooting
+
+- If maps or web fonts are not displayed, check your internet connection.
+- If the site does not open, make sure all files are in place and `index.html` is in the root directory.
+- If using GitHub Pages and you get a 404 error, double-check the GitHub Pages settings (branch and folder).
+
+---
+
+If you encounter any issues, please open an issue on the repository or contact the authors.
+
+---
 
 - index.html : Main page
 - Cafe.html, Food.html, etc. : Category-specific recommendation pages
